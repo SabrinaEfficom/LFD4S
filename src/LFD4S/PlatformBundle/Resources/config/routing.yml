@@ -1,0 +1,39 @@
+lfd4s_platform_home:
+      path:      /
+      defaults: { _controller: LFD4SPlatformBundle:Advert:index }
+
+lfd4s_platform_sign:
+      path:    /signup
+      defaults: { _controller: LFD4SPlatformBundle:Advert:sign }
+
+lfd4s_platform_log:
+      path:    /log
+      defaults: { _controller: LFD4SPlatformBundle:Advert:log }
+
+lfd4s_platform_acount:
+      path:    /account
+      defaults: { _controller: LFD4SPlatformBundle:Advert:account }
+
+lfd4s_platform_grower:
+      path:    /grower
+      defaults: { _controller: LFD4SPlatformBundle:Advert:grower }
+
+lfd4s_platform_cart:
+      path:    /cart
+      defaults: { _controller: LFD4SPlatformBundle:Advert:cart }
+
+lfd4s_platform_admin:
+      path:    /admin
+      defaults: { _controller: LFD4SPlatformBundle:Advert:admin }
+
+lfd4s_platform_view:
+      path:    /view
+      defaults: { _controller: LFD4SPlatformBundle:Advert:view }
+
+lfd4s_platform_first:
+      path:    /first
+      defaults: { _controller: LFD4SPlatformBundle:Advert:first }
+
+lfd4s_platform_second:
+      path:    /second
+      defaults: { _controller: LFD4SPlatformBundle:Advert:second }

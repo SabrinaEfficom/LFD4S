@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% block title %}LFD4S:Accueil{% endblock %} </title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="/images/ico/LFD4Sicon.ico"/>
+    </head>
+    <body>
+        <ul>
+            <li> <a href="{{ path('lfd4s_platform_home')}}">home</a> </li>
+            <li> <a href="{{ path('lfd4s_platform_first')}}">first</a> </li>
+            <li> <a href="{{ path('lfd4s_platform_second')}}">second</a> </li>
+        </ul>
+        {% block body %}{% endblock %}
+        {% block javascript %}{% endblock %}
+    </body>
+</html>

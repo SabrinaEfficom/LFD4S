@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% block title %}ACCOUNT{% endblock %} </title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset(LFD4Sicon.ico) }}">
+    </head>
+    <body>
+        <UL>Hello {{ nom }} !
+             <li> <a href="#">xx</a> </li>
+             <li> <a href="#">xx</a> </li>
+             <li> <a href="#">xx</a> </li>
+        </UL>
+        {% block body %}{% endblock %}
+        {% block javascript %}{% endblock %}
+    </body>
+</html>

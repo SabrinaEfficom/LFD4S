@@ -1,0 +1,13 @@
+lfd4s_platform:
+    resource: "@LFD4SPlatformBundle/Resources/config/routing.yml"
+    prefix:   /
+
+login:
+    path: /login
+    defaults: { _controller: LFD4SUserBundle:Security:login }
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout
