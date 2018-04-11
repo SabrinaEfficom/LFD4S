@@ -1,0 +1,50 @@
+<?php
+
+/* @Framework/Form/choice_widget_expanded.html.php */
+class __TwigTemplate_43463db87c5d600a97221bcb5b913a27ff9f06ca93c39d121b55b18cd3d23192 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $__internal_beae0b08eb14f361c2885d3d2143817fc6825b390a6240f24c0cba86b2541dae = $this->env->getExtension("native_profiler");
+        $__internal_beae0b08eb14f361c2885d3d2143817fc6825b390a6240f24c0cba86b2541dae->enter($__internal_beae0b08eb14f361c2885d3d2143817fc6825b390a6240f24c0cba86b2541dae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_expanded.html.php"));
+
+        // line 1
+        echo "<div <?php echo \$view['form']->block(\$form, 'widget_container_attributes') ?>>
+<?php foreach (\$form as \$child): ?>
+    <?php echo \$view['form']->widget(\$child) ?>
+    <?php echo \$view['form']->label(\$child, null, array('translation_domain' => \$choice_translation_domain)) ?>
+<?php endforeach ?>
+</div>
+";
+        
+        $__internal_beae0b08eb14f361c2885d3d2143817fc6825b390a6240f24c0cba86b2541dae->leave($__internal_beae0b08eb14f361c2885d3d2143817fc6825b390a6240f24c0cba86b2541dae_prof);
+
+    }
+
+    public function getTemplateName()
+    {
+        return "@Framework/Form/choice_widget_expanded.html.php";
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  22 => 1,);
+    }
+}
+/* <div <?php echo $view['form']->block($form, 'widget_container_attributes') ?>>*/
+/* <?php foreach ($form as $child): ?>*/
+/*     <?php echo $view['form']->widget($child) ?>*/
+/*     <?php echo $view['form']->label($child, null, array('translation_domain' => $choice_translation_domain)) ?>*/
+/* <?php endforeach ?>*/
+/* </div>*/
+/* */
