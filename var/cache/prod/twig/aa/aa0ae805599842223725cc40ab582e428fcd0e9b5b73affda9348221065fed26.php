@@ -11,9 +11,6 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'stylesheets' => array($this, 'block_stylesheets'),
-            'navigation' => array($this, 'block_navigation'),
-            'body' => array($this, 'block_body'),
             'javascripts' => array($this, 'block_javascripts'),
         );
     }
@@ -29,34 +26,35 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"description\" content=\"site EII\">
         <meta name=\"author\" content=\"Arif Sabrina\">
+        <link rel=\"shortcut icon\" href=\"themes/assets/ico/LFD4Sicon.ico\">
 
-
-        <title>";
+        ";
         // line 11
         $this->displayBlock('title', $context, $blocks);
-        echo "</title>
+        // line 12
+        echo "
+        <!-- Bootstrap core CSS -->
+        <link href=\"themes/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
 
-        <link rel=\"icon\" type=\"image/x-icon\" href=\"/web/Images/LFD4Sicon.ico\"/>
-        ";
-        // line 14
-        $this->displayBlock('stylesheets', $context, $blocks);
-        // line 19
-        echo "        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src=\"themes/assets/js/ie8-responsive-file-warning.js\"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
         <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
         <![endif]-->
 
+        <!-- Custom styles for this template -->
+        <link href=\"themes/assets/css/carousel.css\" rel=\"stylesheet\">
+
     </head>
     <body>
-        _________________________________________________________
- <br />
+     <br />
 
-        <!-- NAVBAR
-================================================== -->
+        <!-- NAVBAR================================================== -->
         <div class=\"navbar-wrapper\">
             <div class=\"container\">
-
                 <div class=\"navbar navbar-inverse navbar-static-top\" role=\"navigation\">
                     <div class=\"container\">
                         <div class=\"navbar-header\">
@@ -107,7 +105,6 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
             </div>
         </div>
 
-
         <!-- Carousel
    ================================================== -->
         <div id=\"mainCarousel\">
@@ -157,7 +154,7 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
                         <div class=\"container\">
                             <div class=\"carousel-caption\">
                                 <a class=\"btn btn-lg btn-default\" href=";
-        // line 134
+        // line 133
         echo $this->env->getExtension('routing')->getPath("lfd4s_platform_cart");
         echo " role=\"button\" style=\"font-size:2em\">Order Online Now &raquo;</a>
                             </div>
@@ -218,13 +215,6 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
 
         <div class=\"container marketing\">
             <h2 class=\"itemsTitle\">PRODUCTEUR</h2>
@@ -552,20 +542,9 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
             </div><!-- /.carousel -->
         </div><!-- /.container -->
         <!-- /END THE FEATURETTES -->
+        <br />
 
-
-        <br  />
-        _________________________________________________________
- <br  />
-        ";
-        // line 532
-        $this->displayBlock('navigation', $context, $blocks);
-        // line 533
-        echo "        ";
-        $this->displayBlock('body', $context, $blocks);
-        // line 534
-        echo "  ______________________________________________________
- <br  />
+ <br />
         footer<br  />
         <!-- FOOTER -->
         <footer>
@@ -576,9 +555,9 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
         </footer>
  <br  />
         ";
-        // line 545
+        // line 531
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 550
+        // line 536
         echo "    </body>
 </html>
 ";
@@ -590,30 +569,10 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
         echo "LA fraicheur des 4 saisons!";
     }
 
-    // line 14
-    public function block_stylesheets($context, array $blocks = array())
-    {
-        // line 15
-        echo "            <!-- Bootstrap core CSS -->
-            <link href=\"/web/css/bootstrap-theme.min.css\" rel=\"stylesheet\">
-            <link href=\"\\web\\css\\Home.css\" rel=\"stylesheet\">
-        ";
-    }
-
-    // line 532
-    public function block_navigation($context, array $blocks = array())
-    {
-    }
-
-    // line 533
-    public function block_body($context, array $blocks = array())
-    {
-    }
-
-    // line 545
+    // line 531
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 546
+        // line 532
         echo "        <script src=\"https://code.jquery.com/jquery-1.12.4.min.js\"></script>
         <script src=\"/web/js/bootstrap.min.js\"></script>
         <script src=\"/web/js/holder.js \"></script>
@@ -632,7 +591,7 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
 
     public function getDebugInfo()
     {
-        return array (  617 => 546,  614 => 545,  609 => 533,  604 => 532,  597 => 15,  594 => 14,  588 => 11,  582 => 550,  580 => 545,  567 => 534,  564 => 533,  562 => 532,  161 => 134,  44 => 19,  42 => 14,  36 => 11,  24 => 1,);
+        return array (  576 => 532,  573 => 531,  567 => 11,  561 => 536,  559 => 531,  158 => 133,  35 => 12,  33 => 11,  21 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -643,32 +602,32 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
 /*         <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
 /*         <meta name="description" content="site EII">*/
 /*         <meta name="author" content="Arif Sabrina">*/
+/*         <link rel="shortcut icon" href="themes/assets/ico/LFD4Sicon.ico">*/
 /* */
+/*         {% block title %}LA fraicheur des 4 saisons!{% endblock %}*/
 /* */
-/*         <title>{% block title %}LA fraicheur des 4 saisons!{% endblock %}</title>*/
+/*         <!-- Bootstrap core CSS -->*/
+/*         <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">*/
 /* */
-/*         <link rel="icon" type="image/x-icon" href="/web/Images/LFD4Sicon.ico"/>*/
-/*         {% block stylesheets %}*/
-/*             <!-- Bootstrap core CSS -->*/
-/*             <link href="/web/css/bootstrap-theme.min.css" rel="stylesheet">*/
-/*             <link href="\web\css\Home.css" rel="stylesheet">*/
-/*         {% endblock %}*/
+/*         <!-- Just for debugging purposes. Don't actually copy this line! -->*/
+/*         <!--[if lt IE 9]><script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->*/
+/* */
 /*         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->*/
 /*         <!--[if lt IE 9]>*/
 /*         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>*/
 /*         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>*/
 /*         <![endif]-->*/
 /* */
+/*         <!-- Custom styles for this template -->*/
+/*         <link href="themes/assets/css/carousel.css" rel="stylesheet">*/
+/* */
 /*     </head>*/
 /*     <body>*/
-/*         _________________________________________________________*/
-/*  <br />*/
+/*      <br />*/
 /* */
-/*         <!-- NAVBAR*/
-/* ================================================== -->*/
+/*         <!-- NAVBAR================================================== -->*/
 /*         <div class="navbar-wrapper">*/
 /*             <div class="container">*/
-/* */
 /*                 <div class="navbar navbar-inverse navbar-static-top" role="navigation">*/
 /*                     <div class="container">*/
 /*                         <div class="navbar-header">*/
@@ -718,7 +677,6 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
 /* */
 /*             </div>*/
 /*         </div>*/
-/* */
 /* */
 /*         <!-- Carousel*/
 /*    ================================================== -->*/
@@ -827,13 +785,6 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
 /*                 </div>*/
 /*             </div>*/
 /*         </div>*/
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
 /* */
 /*         <div class="container marketing">*/
 /*             <h2 class="itemsTitle">PRODUCTEUR</h2>*/
@@ -1161,15 +1112,9 @@ class __TwigTemplate_a054411cf88f0aa7be43d9bc4403293dd950d43868558c82b0c7ac3905c
 /*             </div><!-- /.carousel -->*/
 /*         </div><!-- /.container -->*/
 /*         <!-- /END THE FEATURETTES -->*/
+/*         <br />*/
 /* */
-/* */
-/*         <br  />*/
-/*         _________________________________________________________*/
-/*  <br  />*/
-/*         {% block navigation %}{% endblock %}*/
-/*         {% block body %}{% endblock %}*/
-/*   ______________________________________________________*/
-/*  <br  />*/
+/*  <br />*/
 /*         footer<br  />*/
 /*         <!-- FOOTER -->*/
 /*         <footer>*/

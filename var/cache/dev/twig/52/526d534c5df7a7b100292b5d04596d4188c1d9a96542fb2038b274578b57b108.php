@@ -11,17 +11,14 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'stylesheets' => array($this, 'block_stylesheets'),
-            'navigation' => array($this, 'block_navigation'),
-            'body' => array($this, 'block_body'),
             'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_90533f58609ce4273d5b8b6d587ea0384e485a2c4721532c4680b03b40ac4d08 = $this->env->getExtension("native_profiler");
-        $__internal_90533f58609ce4273d5b8b6d587ea0384e485a2c4721532c4680b03b40ac4d08->enter($__internal_90533f58609ce4273d5b8b6d587ea0384e485a2c4721532c4680b03b40ac4d08_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_484ccccc3d96e0c3727823e1e9c0465bd582f7bc5249f02d2edc3ef27ea45a7c = $this->env->getExtension("native_profiler");
+        $__internal_484ccccc3d96e0c3727823e1e9c0465bd582f7bc5249f02d2edc3ef27ea45a7c->enter($__internal_484ccccc3d96e0c3727823e1e9c0465bd582f7bc5249f02d2edc3ef27ea45a7c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -32,23 +29,18 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"description\" content=\"site EII\">
         <meta name=\"author\" content=\"Arif Sabrina\">
+        <link rel=\"shortcut icon\" href=\"themes/assets/ico/LFD4Sicon.ico\">
 
-        <!-- Bootstrap core CSS -->
-        <link href=\"/web/css/bootstrap-theme.min.css\" rel=\"stylesheet\">
-
-        <title>";
-        // line 13
-        $this->displayBlock('title', $context, $blocks);
-        echo "</title>
         ";
-        // line 14
-        $this->displayBlock('stylesheets', $context, $blocks);
-        // line 15
-        echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"/web/Images/LFD4Sicon.ico\"/>
+        // line 11
+        $this->displayBlock('title', $context, $blocks);
+        // line 12
+        echo "
+        <!-- Bootstrap core CSS -->
+        <link href=\"themes/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
 
-
-
-        <link href=\"\\web\\css\\Home.css\" rel=\"stylesheet\">
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src=\"themes/assets/js/ie8-responsive-file-warning.js\"></script><![endif]-->
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -56,16 +48,16 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
         <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
         <![endif]-->
 
+        <!-- Custom styles for this template -->
+        <link href=\"themes/assets/css/carousel.css\" rel=\"stylesheet\">
+
     </head>
     <body>
-        _________________________________________________________
- <br />
+     <br />
 
-        <!-- NAVBAR
-================================================== -->
+        <!-- NAVBAR================================================== -->
         <div class=\"navbar-wrapper\">
             <div class=\"container\">
-
                 <div class=\"navbar navbar-inverse navbar-static-top\" role=\"navigation\">
                     <div class=\"container\">
                         <div class=\"navbar-header\">
@@ -116,7 +108,6 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
             </div>
         </div>
 
-
         <!-- Carousel
    ================================================== -->
         <div id=\"mainCarousel\">
@@ -166,7 +157,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
                         <div class=\"container\">
                             <div class=\"carousel-caption\">
                                 <a class=\"btn btn-lg btn-default\" href=";
-        // line 136
+        // line 133
         echo $this->env->getExtension('routing')->getPath("lfd4s_platform_cart");
         echo " role=\"button\" style=\"font-size:2em\">Order Online Now &raquo;</a>
                             </div>
@@ -228,15 +219,8 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
             </div>
         </div>
 
-
-
-
-
-
-
-
         <div class=\"container marketing\">
-            <h2 class=\"itemsTitle\">PRODUCTEUR/h2>
+            <h2 class=\"itemsTitle\">PRODUCTEUR</h2>
             <div id=\"myCarousel1\" class=\"carousel slide\" data-ride=\"carousel\">
                 <!-- Indicators -->
                 <div class=\"carousel-inner\">
@@ -561,20 +545,9 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
             </div><!-- /.carousel -->
         </div><!-- /.container -->
         <!-- /END THE FEATURETTES -->
+        <br />
 
-
-        <br  />
-        _________________________________________________________
- <br  />
-        ";
-        // line 534
-        $this->displayBlock('navigation', $context, $blocks);
-        // line 535
-        echo "        ";
-        $this->displayBlock('body', $context, $blocks);
-        // line 536
-        echo "  ______________________________________________________
- <br  />
+ <br />
         footer<br  />
         <!-- FOOTER -->
         <footer>
@@ -585,75 +558,42 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
         </footer>
  <br  />
         ";
-        // line 547
+        // line 531
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 552
+        // line 536
         echo "    </body>
 </html>
 ";
         
-        $__internal_90533f58609ce4273d5b8b6d587ea0384e485a2c4721532c4680b03b40ac4d08->leave($__internal_90533f58609ce4273d5b8b6d587ea0384e485a2c4721532c4680b03b40ac4d08_prof);
+        $__internal_484ccccc3d96e0c3727823e1e9c0465bd582f7bc5249f02d2edc3ef27ea45a7c->leave($__internal_484ccccc3d96e0c3727823e1e9c0465bd582f7bc5249f02d2edc3ef27ea45a7c_prof);
 
     }
 
-    // line 13
+    // line 11
     public function block_title($context, array $blocks = array())
     {
-        $__internal_0149252ce1bb03f67c66c9e22ea0bb645ecdf6ef1d1039a45874346996070c1f = $this->env->getExtension("native_profiler");
-        $__internal_0149252ce1bb03f67c66c9e22ea0bb645ecdf6ef1d1039a45874346996070c1f->enter($__internal_0149252ce1bb03f67c66c9e22ea0bb645ecdf6ef1d1039a45874346996070c1f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_94d367196f8298e68fec924ba3a3235556b10bed03816a1dc78cfcd4a53611d0 = $this->env->getExtension("native_profiler");
+        $__internal_94d367196f8298e68fec924ba3a3235556b10bed03816a1dc78cfcd4a53611d0->enter($__internal_94d367196f8298e68fec924ba3a3235556b10bed03816a1dc78cfcd4a53611d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "LA fraicheur des 4 saisons!";
         
-        $__internal_0149252ce1bb03f67c66c9e22ea0bb645ecdf6ef1d1039a45874346996070c1f->leave($__internal_0149252ce1bb03f67c66c9e22ea0bb645ecdf6ef1d1039a45874346996070c1f_prof);
+        $__internal_94d367196f8298e68fec924ba3a3235556b10bed03816a1dc78cfcd4a53611d0->leave($__internal_94d367196f8298e68fec924ba3a3235556b10bed03816a1dc78cfcd4a53611d0_prof);
 
     }
 
-    // line 14
-    public function block_stylesheets($context, array $blocks = array())
-    {
-        $__internal_12dff7f01296a2474870352e04bec2491a913029395bd70b349da2db40de7079 = $this->env->getExtension("native_profiler");
-        $__internal_12dff7f01296a2474870352e04bec2491a913029395bd70b349da2db40de7079->enter($__internal_12dff7f01296a2474870352e04bec2491a913029395bd70b349da2db40de7079_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        
-        $__internal_12dff7f01296a2474870352e04bec2491a913029395bd70b349da2db40de7079->leave($__internal_12dff7f01296a2474870352e04bec2491a913029395bd70b349da2db40de7079_prof);
-
-    }
-
-    // line 534
-    public function block_navigation($context, array $blocks = array())
-    {
-        $__internal_3c8d727aa91962143e01e7ff80d89e4b92d087f10ad353a8a1267553c081270a = $this->env->getExtension("native_profiler");
-        $__internal_3c8d727aa91962143e01e7ff80d89e4b92d087f10ad353a8a1267553c081270a->enter($__internal_3c8d727aa91962143e01e7ff80d89e4b92d087f10ad353a8a1267553c081270a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
-
-        
-        $__internal_3c8d727aa91962143e01e7ff80d89e4b92d087f10ad353a8a1267553c081270a->leave($__internal_3c8d727aa91962143e01e7ff80d89e4b92d087f10ad353a8a1267553c081270a_prof);
-
-    }
-
-    // line 535
-    public function block_body($context, array $blocks = array())
-    {
-        $__internal_0fcaac4bb8ae261b61d4ba7d8e2da75aee1915a90a5f73089b2c10d4df857b72 = $this->env->getExtension("native_profiler");
-        $__internal_0fcaac4bb8ae261b61d4ba7d8e2da75aee1915a90a5f73089b2c10d4df857b72->enter($__internal_0fcaac4bb8ae261b61d4ba7d8e2da75aee1915a90a5f73089b2c10d4df857b72_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_0fcaac4bb8ae261b61d4ba7d8e2da75aee1915a90a5f73089b2c10d4df857b72->leave($__internal_0fcaac4bb8ae261b61d4ba7d8e2da75aee1915a90a5f73089b2c10d4df857b72_prof);
-
-    }
-
-    // line 547
+    // line 531
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_07dfc7890b2183cd49b9017c9f6ccd005503048d094f0799119ad4737aabceb1 = $this->env->getExtension("native_profiler");
-        $__internal_07dfc7890b2183cd49b9017c9f6ccd005503048d094f0799119ad4737aabceb1->enter($__internal_07dfc7890b2183cd49b9017c9f6ccd005503048d094f0799119ad4737aabceb1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_78035cffdbcd30762e44ec6785f1cb78714f77dda802858c3cf005b26eb81d93 = $this->env->getExtension("native_profiler");
+        $__internal_78035cffdbcd30762e44ec6785f1cb78714f77dda802858c3cf005b26eb81d93->enter($__internal_78035cffdbcd30762e44ec6785f1cb78714f77dda802858c3cf005b26eb81d93_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 548
+        // line 532
         echo "        <script src=\"https://code.jquery.com/jquery-1.12.4.min.js\"></script>
         <script src=\"/web/js/bootstrap.min.js\"></script>
         <script src=\"/web/js/holder.js \"></script>
         ";
         
-        $__internal_07dfc7890b2183cd49b9017c9f6ccd005503048d094f0799119ad4737aabceb1->leave($__internal_07dfc7890b2183cd49b9017c9f6ccd005503048d094f0799119ad4737aabceb1_prof);
+        $__internal_78035cffdbcd30762e44ec6785f1cb78714f77dda802858c3cf005b26eb81d93->leave($__internal_78035cffdbcd30762e44ec6785f1cb78714f77dda802858c3cf005b26eb81d93_prof);
 
     }
 
@@ -669,7 +609,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 
     public function getDebugInfo()
     {
-        return array (  651 => 548,  645 => 547,  634 => 535,  623 => 534,  612 => 14,  600 => 13,  591 => 552,  589 => 547,  576 => 536,  573 => 535,  571 => 534,  170 => 136,  47 => 15,  45 => 14,  41 => 13,  27 => 1,);
+        return array (  591 => 532,  585 => 531,  573 => 11,  564 => 536,  562 => 531,  161 => 133,  38 => 12,  36 => 11,  24 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -680,17 +620,15 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /*         <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
 /*         <meta name="description" content="site EII">*/
 /*         <meta name="author" content="Arif Sabrina">*/
+/*         <link rel="shortcut icon" href="themes/assets/ico/LFD4Sicon.ico">*/
+/* */
+/*         {% block title %}LA fraicheur des 4 saisons!{% endblock %}*/
 /* */
 /*         <!-- Bootstrap core CSS -->*/
-/*         <link href="/web/css/bootstrap-theme.min.css" rel="stylesheet">*/
+/*         <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">*/
 /* */
-/*         <title>{% block title %}LA fraicheur des 4 saisons!{% endblock %}</title>*/
-/*         {% block stylesheets %}{% endblock %}*/
-/*         <link rel="icon" type="image/x-icon" href="/web/Images/LFD4Sicon.ico"/>*/
-/* */
-/* */
-/* */
-/*         <link href="\web\css\Home.css" rel="stylesheet">*/
+/*         <!-- Just for debugging purposes. Don't actually copy this line! -->*/
+/*         <!--[if lt IE 9]><script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->*/
 /* */
 /*         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->*/
 /*         <!--[if lt IE 9]>*/
@@ -698,16 +636,16 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /*         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>*/
 /*         <![endif]-->*/
 /* */
+/*         <!-- Custom styles for this template -->*/
+/*         <link href="themes/assets/css/carousel.css" rel="stylesheet">*/
+/* */
 /*     </head>*/
 /*     <body>*/
-/*         _________________________________________________________*/
-/*  <br />*/
+/*      <br />*/
 /* */
-/*         <!-- NAVBAR*/
-/* ================================================== -->*/
+/*         <!-- NAVBAR================================================== -->*/
 /*         <div class="navbar-wrapper">*/
 /*             <div class="container">*/
-/* */
 /*                 <div class="navbar navbar-inverse navbar-static-top" role="navigation">*/
 /*                     <div class="container">*/
 /*                         <div class="navbar-header">*/
@@ -757,7 +695,6 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /* */
 /*             </div>*/
 /*         </div>*/
-/* */
 /* */
 /*         <!-- Carousel*/
 /*    ================================================== -->*/
@@ -867,15 +804,8 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /*             </div>*/
 /*         </div>*/
 /* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
 /*         <div class="container marketing">*/
-/*             <h2 class="itemsTitle">PRODUCTEUR/h2>*/
+/*             <h2 class="itemsTitle">PRODUCTEUR</h2>*/
 /*             <div id="myCarousel1" class="carousel slide" data-ride="carousel">*/
 /*                 <!-- Indicators -->*/
 /*                 <div class="carousel-inner">*/
@@ -1200,15 +1130,9 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /*             </div><!-- /.carousel -->*/
 /*         </div><!-- /.container -->*/
 /*         <!-- /END THE FEATURETTES -->*/
+/*         <br />*/
 /* */
-/* */
-/*         <br  />*/
-/*         _________________________________________________________*/
-/*  <br  />*/
-/*         {% block navigation %}{% endblock %}*/
-/*         {% block body %}{% endblock %}*/
-/*   ______________________________________________________*/
-/*  <br  />*/
+/*  <br />*/
 /*         footer<br  />*/
 /*         <!-- FOOTER -->*/
 /*         <footer>*/

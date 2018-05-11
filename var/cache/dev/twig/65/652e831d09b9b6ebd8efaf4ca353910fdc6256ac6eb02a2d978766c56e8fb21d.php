@@ -15,8 +15,8 @@ class __TwigTemplate_c7d19a165b9611ac461e23eb1e68326d5dff7ed9fa43182d8b048e0370a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c79a040701e715f27b308949bd021d8f2dab2538d8d21fdc896e36e14c752118 = $this->env->getExtension("native_profiler");
-        $__internal_c79a040701e715f27b308949bd021d8f2dab2538d8d21fdc896e36e14c752118->enter($__internal_c79a040701e715f27b308949bd021d8f2dab2538d8d21fdc896e36e14c752118_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@LFD4SPlatform/Advert/log.html.twig"));
+        $__internal_bfa54741af74575f824e8df0e06a68bae0bc9b5e13bd4f564a703ae1a7006f83 = $this->env->getExtension("native_profiler");
+        $__internal_bfa54741af74575f824e8df0e06a68bae0bc9b5e13bd4f564a703ae1a7006f83->enter($__internal_bfa54741af74575f824e8df0e06a68bae0bc9b5e13bd4f564a703ae1a7006f83_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@LFD4SPlatform/Advert/log.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -40,7 +40,7 @@ class __TwigTemplate_c7d19a165b9611ac461e23eb1e68326d5dff7ed9fa43182d8b048e0370a
 </html>
 ";
         
-        $__internal_c79a040701e715f27b308949bd021d8f2dab2538d8d21fdc896e36e14c752118->leave($__internal_c79a040701e715f27b308949bd021d8f2dab2538d8d21fdc896e36e14c752118_prof);
+        $__internal_bfa54741af74575f824e8df0e06a68bae0bc9b5e13bd4f564a703ae1a7006f83->leave($__internal_bfa54741af74575f824e8df0e06a68bae0bc9b5e13bd4f564a703ae1a7006f83_prof);
 
     }
 
