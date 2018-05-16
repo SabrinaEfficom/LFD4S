@@ -1,6 +1,11 @@
-lfd4s_platform_home:
+lfd4s_platform_first:
       path:      /
+      defaults: { _controller: LFD4SPlatformBundle:Advert:first }
+
+lfd4s_platform_home:
+      path:    /first
       defaults: { _controller: LFD4SPlatformBundle:Advert:index }
+
 
 lfd4s_platform_sign:
       path:    /signup
@@ -29,10 +34,6 @@ lfd4s_platform_admin:
 lfd4s_platform_view:
       path:    /view
       defaults: { _controller: LFD4SPlatformBundle:Advert:view }
-
-lfd4s_platform_first:
-      path:    /first
-      defaults: { _controller: LFD4SPlatformBundle:Advert:first }
 
 lfd4s_platform_second:
       path:    /second

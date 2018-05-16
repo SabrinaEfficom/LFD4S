@@ -10,15 +10,14 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
         $this->parent = false;
 
         $this->blocks = array(
-            'title' => array($this, 'block_title'),
             'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d66f86af72dca4c6fd54d4264d28d62917828e04dc02f94d4cbb244fd94b4ed4 = $this->env->getExtension("native_profiler");
-        $__internal_d66f86af72dca4c6fd54d4264d28d62917828e04dc02f94d4cbb244fd94b4ed4->enter($__internal_d66f86af72dca4c6fd54d4264d28d62917828e04dc02f94d4cbb244fd94b4ed4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base.html.twig"));
+        $__internal_2a2ac811a92eab9a3db7d6d41ebee9c93a2d1bdbc9745aed413032c4aabed634 = $this->env->getExtension("native_profiler");
+        $__internal_2a2ac811a92eab9a3db7d6d41ebee9c93a2d1bdbc9745aed413032c4aabed634->enter($__internal_2a2ac811a92eab9a3db7d6d41ebee9c93a2d1bdbc9745aed413032c4aabed634_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -31,11 +30,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
         <meta name=\"author\" content=\"Arif Sabrina\">
         <link rel=\"shortcut icon\" href=\"themes/assets/ico/LFD4Sicon.ico\">
 
-        ";
-        // line 11
-        $this->displayBlock('title', $context, $blocks);
-        // line 12
-        echo "
+
         <!-- Bootstrap core CSS -->
         <link href=\"themes/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
 
@@ -67,28 +62,34 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
                                 <span class=\"icon-bar\"></span>
                                 <span class=\"icon-bar\"></span>
                             </button>
-                            <a class=\"navbar-brand\" href=\"index.html\">Accueil LFD4St</a>
+                            <a class=\"navbar-brand\" href=";
+        // line 43
+        echo $this->env->getExtension('routing')->getPath("lfd4s_platform_home");
+        echo ">Accueil LFD4St</a>
                         </div>
                         <div class=\"navbar-collapse collapse\">
                             <ul class=\"nav navbar-nav\">
-                                <li class=\"active\"><a href=\"index.html\">Home</a></li>
+                                <li class=\"active\"><a href=\"lfd4s_platform_first:\">Home</a></li>
+                                <li><a href=\"login\">sign</a></li>
                                 <li><a href=\"about.html\">About Us</a></li>
                                 <li><a href=\"contact.html\">Contact</a></li>
                                 <li><a href=\"#Commande\">Commande</a></li>
                                 <li class=\"dropdown\">
-                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Producteur <b class=\"caret\"></b></a>
+                                    <a href=\"\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Producteur <b class=\"caret\"></b></a>
                                     <ul class=\"dropdown-menu\">
-                                        <li><a href=\"#\">Producteur</a></li>
+                                        <li><a href=\"\">Producteurs</a></li>
+                                        <li><a href=\"\">info Producteur</a></li>
 
                                     </ul>
                                 </li>
 
                                 <li class=\"dropdown\">
-                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">bio <b class=\"caret\"></b></a>
+                                    <a href=\"\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">bio <b class=\"caret\"></b></a>
                                     <ul class=\"dropdown-menu\">
                                         <li class=\"divider\"></li>
                                         <li class=\"dropdown-header\">produit</li>
-                                        <li><a href=\"#\">salade</a></li>
+                                        <li><a href=\"\">fruits</a></li>
+                                        <li><a href=\"\">legumes</a></li>
 
                                     </ul>
                                 </li>
@@ -124,7 +125,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
                                 src=\"http://maps.googleapis.com/maps/api/js?key=AIzaSyBeFIshYtHt6EJgz_5zl66k1O10a-gnGaI&sensor=false\">
                         </script>
                         <script>
-                            var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+                            var myCenter=new google.maps.LatLng(50.63123710000001,3.063240700000051);
                             var marker;
                             function initialize()
                             {
@@ -157,9 +158,9 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
                         <div class=\"container\">
                             <div class=\"carousel-caption\">
                                 <a class=\"btn btn-lg btn-default\" href=";
-        // line 133
+        // line 135
         echo $this->env->getExtension('routing')->getPath("lfd4s_platform_cart");
-        echo " role=\"button\" style=\"font-size:2em\">Order Online Now &raquo;</a>
+        echo " role=\"button\" style=\"font-size:2em\">Commande &raquo;</a>
                             </div>
                         </div>
                     </div>
@@ -171,7 +172,9 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
             <div class=\"container\">
                 <h1>La fraicheur des 4 saisons</h1>
                 <p>
-                   LA FD4S EST ......
+                   La FD4S est société la société qui vous mets en contact avec les producteurs de votre région!
+                    Nousvous garantissons livraison rapide, qualité, transparance et la sécurité de vos achats
+
                 </p>
             </div>
         </div>
@@ -186,22 +189,19 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
             <!-- Three columns of text below the carousel -->
             <div class=\"row\">
                 <div class=\"col-lg-4\">
-                    <img class=\"img-circle\" src=\"themes/assets/images/nepali-momo.png\" alt=\"Generic placeholder image\">
-                    <h2>Nepalese MOMO</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
-                    <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">&pound; 2.2 Add to cart &raquo;</a></p>
+                    <img class=\"img-circle\" src=\"themes/assets/images/Produits.jpg\" alt=\"Generic placeholder image\">
+                    <h2>Produits</h2>
+                    <p><a class=\"btn btn-default\" href=\"#\" role=\"button\"> En savoir plus </a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class=\"col-lg-4\">
-                    <img class=\"img-circle\" src=\"themes/assets/images/burger.png\" alt=\"Generic placeholder image\">
-                    <h2>Burger</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
-                    <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">&pound;5 Add to cart &raquo;</a></p>
+                    <img class=\"img-circle\" src=\"themes/assets/images/image.jpg\" alt=\"Generic placeholder image\">
+                    <h2>livraison</h2>
+                    <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">En savoir plus </a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class=\"col-lg-4\">
-                    <img class=\"img-circle\" src=\"themes/assets/images/gorkha-special-chicken.png\" alt=\"Lam Tikka\">
-                    <h2>Gurkha Chicken</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
-                    <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">&pound;4 Add to cart &raquo;</a></p>
+                    <img class=\"img-circle\" src=\"themes/assets/images/Paypal.jpg\" alt=\"Lam Tikka\">
+                    <h2>Paiement sécurisé </h2>
+                    <p><a class=\"btn btn-default\" href=\"#\" role=\"button\"> En savoir plus </a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
         </div>
@@ -213,52 +213,32 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-lg-12\">
-                        <h1 class=\"cntr\">We are launching complete online food order system for restaurent and takeaway Only at the rate <br>&pound;999 </h1>
+                        <h1 class=\"cntr\">Nos producteur vous propose leur produits</h1>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class=\"container marketing\">
-            <h2 class=\"itemsTitle\">PRODUCTEUR</h2>
+            <h2 class=\"itemsTitle\">Producteurs le mieux notés</h2>
             <div id=\"myCarousel1\" class=\"carousel slide\" data-ride=\"carousel\">
                 <!-- Indicators -->
                 <div class=\"carousel-inner\">
                     <div class=\"item active\">
                         <div class=\"row\">
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/salate.png\" alt=\"Generic placeholder image\">
-                                <h4>Salates</h4>
+                                <img src=\"themes/assets/images/PROD1.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 1</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/burger.png\" alt=\"Generic placeholder image\">
-                                <h4>Meal</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 2</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
-                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
-                            </div><!-- /.col-lg-4 -->
-                        </div><!-- /.row -->
-
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"row\">
-                            <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/salate.png\" alt=\"Generic placeholder image\">
-                                <h4>Salates</h4>
-                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
-                            </div><!-- /.col-lg-4 -->
-                            <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/burger.png\" alt=\"Generic placeholder image\">
-                                <h4>Meal</h4>
-                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
-                            </div><!-- /.col-lg-4 -->
-                            <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
+                                <img src=\"themes/assets/images/PROD3.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 3</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                         </div><!-- /.row -->
@@ -267,18 +247,38 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
                     <div class=\"item\">
                         <div class=\"row\">
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/salate.png\" alt=\"Generic placeholder image\">
-                                <h4>Salates</h4>
+                                <img src=\"themes/assets/images/producteur.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 4</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/burger.png\" alt=\"Generic placeholder image\">
-                                <h4>Meal</h4>
+                                <img src=\"themes/assets/images/produits.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 5</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 6</h4>
+                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
+                            </div><!-- /.col-lg-4 -->
+                        </div><!-- /.row -->
+
+                    </div>
+                    <div class=\"item\">
+                        <div class=\"row\">
+                            <div class=\"col-lg-4\">
+                                <img  src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 7</h4>
+                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
+                            </div><!-- /.col-lg-4 -->
+                            <div class=\"col-lg-4\">
+                                <img  src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 8</h4>
+                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
+                            </div><!-- /.col-lg-4 -->
+                            <div class=\"col-lg-4\">
+                                <img  src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 9</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                         </div><!-- /.row -->
@@ -290,45 +290,25 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
         </div>
 
         <div class=\"container marketing\">
-            <h2 class=\"itemsTitle\">Lunch</h2>
+            <h2 class=\"itemsTitle\">Producteurs à proximité</h2>
             <div id=\"myCarousel2\" class=\"carousel slide\" data-ride=\"carousel\">
                 <!-- Indicators -->
                 <div class=\"carousel-inner\">
                     <div class=\"item active\">
                         <div class=\"row\">
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/salate.png\" alt=\"Generic placeholder image\">
-                                <h4>Salates</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>Prod 10</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/chicken.png\" alt=\"Generic placeholder image\">
-                                <h4>Meal</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>Prod 11</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/drinks_lussy.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
-                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
-                            </div><!-- /.col-lg-4 -->
-                        </div><!-- /.row -->
-
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"row\">
-                            <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/chicken_fry.png\" alt=\"Generic placeholder image\">
-                                <h4>Salates</h4>
-                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
-                            </div><!-- /.col-lg-4 -->
-                            <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/fish-and-chips.png\" alt=\"Generic placeholder image\">
-                                <h4>Meal</h4>
-                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
-                            </div><!-- /.col-lg-4 -->
-                            <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>Prod 12</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                         </div><!-- /.row -->
@@ -337,18 +317,38 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
                     <div class=\"item\">
                         <div class=\"row\">
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/salate.png\" alt=\"Generic placeholder image\">
-                                <h4>Salates</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 13</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/burger.png\" alt=\"Generic placeholder image\">
-                                <h4>Meal</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 14</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 15</h4>
+                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
+                            </div><!-- /.col-lg-4 -->
+                        </div><!-- /.row -->
+
+                    </div>
+                    <div class=\"item\">
+                        <div class=\"row\">
+                            <div class=\"col-lg-4\">
+                                <img  src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 16</h4>
+                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
+                            </div><!-- /.col-lg-4 -->
+                            <div class=\"col-lg-4\">
+                                <img  src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 17</h4>
+                                <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
+                            </div><!-- /.col-lg-4 -->
+                            <div class=\"col-lg-4\">
+                                <img  src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 18</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                         </div><!-- /.row -->
@@ -360,72 +360,74 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
         </div>
 
         <div class=\"container marketing\">
-            <h2 class=\"itemsTitle\">Dinner</h2>
+            <h2 class=\"itemsTitle\"> NOS NOUVEAU PRODUCTEURS </h2>
             <div id=\"myCarousel3\" class=\"carousel slide\" data-ride=\"carousel\">
                 <!-- Indicators -->
                 <div class=\"carousel-inner\">
                     <div class=\"item active\">
                         <div class=\"row\">
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/chicken_fry.png\" alt=\"Generic placeholder image\">
-                                <h4>Chicken</h4>
+                                <img src=\"themes/assets/images/PROD1.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 19</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/rice.png\" alt=\"Generic placeholder image\">
-                                <h4>Rice</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 20</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
+                                <img src=\"themes/assets/images/PROD3.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 21</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
+
                         </div><!-- /.row -->
 
                     </div>
                     <div class=\"item\">
                         <div class=\"row\">
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/courinder.png\" alt=\"Generic placeholder image\">
-                                <h4>Salates</h4>
+                                <img src=\"themes/assets/images/PROD1.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 22</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/burger.png\" alt=\"Generic placeholder image\">
-                                <h4>Meal</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 23</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
+                                <img src=\"themes/assets/images/PROD3.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 24</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
+
                         </div><!-- /.row -->
 
                     </div>
                     <div class=\"item\">
                         <div class=\"row\">
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/salate.png\" alt=\"Generic placeholder image\">
-                                <h4>Salates</h4>
+                                <img src=\"themes/assets/images/PROD1.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 25</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/chicken_fry.png\" alt=\"Generic placeholder image\">
-                                <h4>Chicken</h4>
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 26</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                             <div class=\"col-lg-4\">
-                                <img  src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
-                                <h4>Drink</h4>
+                                <img src=\"themes/assets/images/PROD3.jpg\" alt=\"Generic placeholder image\">
+                                <h4>prod 27</h4>
                                 <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">Add to cart &raquo;</a></p>
                             </div><!-- /.col-lg-4 -->
                         </div><!-- /.row -->
                     </div>
                 </div>
-                <a class=\"left carousel-control\" href=\"#myCarousel3\" data-slide=\"prev\"><span class=\"glyphicon glyphicon-chevron-left\"></span></a>
-                <a class=\"right carousel-control\" href=\"#myCarousel3\" data-slide=\"next\"><span class=\"glyphicon glyphicon-chevron-right\"></span></a>
+                <a class=\"left carousel-control\" href=\"\" data-slide=\"prev\"><span class=\"glyphicon glyphicon-chevron-left\"></span></a>
+                <a class=\"right carousel-control\" href=\"\" data-slide=\"next\"><span class=\"glyphicon glyphicon-chevron-right\"></span></a>
             </div><!-- /.carousel -->
         </div>
 
@@ -511,7 +513,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
                                 <p class=\"lead\">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                             </div>
                             <div class=\"col-md-5\">
-                                <img src=\"themes/assets/images/fish-and-chips.png\" alt=\"Fish and Chips\">
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Fish and Chips\">
                             </div>
                         </div>
                     </div>
@@ -520,7 +522,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
                     <div class=\"item\">
                         <div class=\"row featurette\">
                             <div class=\"col-md-5\">
-                                <img src=\"themes/assets/images/burger.png\" alt=\"Generic placeholder image\">
+                                <img src=\"themes/assets/images/PROD2.jpg\" alt=\"Generic placeholder image\">
                             </div>
                             <div class=\"col-md-7\">
                                 <h2 class=\"featurette-heading\">Oh yeah, very nice Burger. <span class=\"text-muted\">Delicious.</span></h2>
@@ -537,7 +539,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
                                 <p class=\"lead\">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                             </div>
                             <div class=\"col-md-5\">
-                                <img class=\"img-circle\" src=\"themes/assets/images/drinks.png\" alt=\"Generic placeholder image\">
+                                <img class=\"img-circle\" src=\"/themes/assets/images/PROD1.jpg\" alt=\"Generic placeholder image\">
                             </div>
                         </div>
                     </div>
@@ -547,53 +549,41 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
         <!-- /END THE FEATURETTES -->
         <br />
 
- <br />
-        footer<br  />
+ <br /><br  />
         <!-- FOOTER -->
         <footer>
             <div class=\"container\">
-                <p class=\"pull-right\"><a href=\"#\">Back to top</a></p>
-                <p>&copy; 2018 LFD4S, Inc. &middot; <a href=\"#\">Privacy</a> &middot; <a href=\"#\">Terms</a></p>
+                <p class=\"pull-right\"><a href=\"\">Back to top</a></p>
+                <p>&copy; 2018 LFD4S, Inc. &middot; <a href=\"#\">Privacy</a> &middot; <a href=\"#\">Mentions Légales</a></p>
+                <p>Pour votre santé, pratiquez une activité physique régulière. <a href=www.mangerbouger.fr>www.mangerbouger.fr</a></p>
             </div>
         </footer>
  <br  />
         ";
-        // line 531
+        // line 534
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 536
+        // line 539
         echo "    </body>
 </html>
 ";
         
-        $__internal_d66f86af72dca4c6fd54d4264d28d62917828e04dc02f94d4cbb244fd94b4ed4->leave($__internal_d66f86af72dca4c6fd54d4264d28d62917828e04dc02f94d4cbb244fd94b4ed4_prof);
+        $__internal_2a2ac811a92eab9a3db7d6d41ebee9c93a2d1bdbc9745aed413032c4aabed634->leave($__internal_2a2ac811a92eab9a3db7d6d41ebee9c93a2d1bdbc9745aed413032c4aabed634_prof);
 
     }
 
-    // line 11
-    public function block_title($context, array $blocks = array())
-    {
-        $__internal_37c86744485875cf9e57f2e820e1abebbd0ade08fa9d087f4a73896ec470500f = $this->env->getExtension("native_profiler");
-        $__internal_37c86744485875cf9e57f2e820e1abebbd0ade08fa9d087f4a73896ec470500f->enter($__internal_37c86744485875cf9e57f2e820e1abebbd0ade08fa9d087f4a73896ec470500f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        echo "LA fraicheur des 4 saisons!";
-        
-        $__internal_37c86744485875cf9e57f2e820e1abebbd0ade08fa9d087f4a73896ec470500f->leave($__internal_37c86744485875cf9e57f2e820e1abebbd0ade08fa9d087f4a73896ec470500f_prof);
-
-    }
-
-    // line 531
+    // line 534
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_2b0a1b0be7d5071cab131a6af613ed987e13356d3ca17bdc7479508d17aab423 = $this->env->getExtension("native_profiler");
-        $__internal_2b0a1b0be7d5071cab131a6af613ed987e13356d3ca17bdc7479508d17aab423->enter($__internal_2b0a1b0be7d5071cab131a6af613ed987e13356d3ca17bdc7479508d17aab423_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_8783c8e9fad2360d5d0ba66f8498ee02b1845555eedc21d9ff930dd348b91fdb = $this->env->getExtension("native_profiler");
+        $__internal_8783c8e9fad2360d5d0ba66f8498ee02b1845555eedc21d9ff930dd348b91fdb->enter($__internal_8783c8e9fad2360d5d0ba66f8498ee02b1845555eedc21d9ff930dd348b91fdb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 532
+        // line 535
         echo "        <script src=\"https://code.jquery.com/jquery-1.12.4.min.js\"></script>
         <script src=\"/web/js/bootstrap.min.js\"></script>
         <script src=\"/web/js/holder.js \"></script>
         ";
         
-        $__internal_2b0a1b0be7d5071cab131a6af613ed987e13356d3ca17bdc7479508d17aab423->leave($__internal_2b0a1b0be7d5071cab131a6af613ed987e13356d3ca17bdc7479508d17aab423_prof);
+        $__internal_8783c8e9fad2360d5d0ba66f8498ee02b1845555eedc21d9ff930dd348b91fdb->leave($__internal_8783c8e9fad2360d5d0ba66f8498ee02b1845555eedc21d9ff930dd348b91fdb_prof);
 
     }
 
@@ -609,7 +599,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 
     public function getDebugInfo()
     {
-        return array (  591 => 532,  585 => 531,  573 => 11,  564 => 536,  562 => 531,  161 => 133,  38 => 12,  36 => 11,  24 => 1,);
+        return array (  581 => 535,  575 => 534,  566 => 539,  564 => 534,  162 => 135,  67 => 43,  23 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -622,7 +612,6 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*         <meta name="author" content="Arif Sabrina">*/
 /*         <link rel="shortcut icon" href="themes/assets/ico/LFD4Sicon.ico">*/
 /* */
-/*         {% block title %}LA fraicheur des 4 saisons!{% endblock %}*/
 /* */
 /*         <!-- Bootstrap core CSS -->*/
 /*         <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">*/
@@ -655,28 +644,31 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*                                 <span class="icon-bar"></span>*/
 /*                                 <span class="icon-bar"></span>*/
 /*                             </button>*/
-/*                             <a class="navbar-brand" href="index.html">Accueil LFD4St</a>*/
+/*                             <a class="navbar-brand" href={{ path('lfd4s_platform_home')}}>Accueil LFD4St</a>*/
 /*                         </div>*/
 /*                         <div class="navbar-collapse collapse">*/
 /*                             <ul class="nav navbar-nav">*/
-/*                                 <li class="active"><a href="index.html">Home</a></li>*/
+/*                                 <li class="active"><a href="lfd4s_platform_first:">Home</a></li>*/
+/*                                 <li><a href="login">sign</a></li>*/
 /*                                 <li><a href="about.html">About Us</a></li>*/
 /*                                 <li><a href="contact.html">Contact</a></li>*/
 /*                                 <li><a href="#Commande">Commande</a></li>*/
 /*                                 <li class="dropdown">*/
-/*                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Producteur <b class="caret"></b></a>*/
+/*                                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Producteur <b class="caret"></b></a>*/
 /*                                     <ul class="dropdown-menu">*/
-/*                                         <li><a href="#">Producteur</a></li>*/
+/*                                         <li><a href="">Producteurs</a></li>*/
+/*                                         <li><a href="">info Producteur</a></li>*/
 /* */
 /*                                     </ul>*/
 /*                                 </li>*/
 /* */
 /*                                 <li class="dropdown">*/
-/*                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">bio <b class="caret"></b></a>*/
+/*                                     <a href="" class="dropdown-toggle" data-toggle="dropdown">bio <b class="caret"></b></a>*/
 /*                                     <ul class="dropdown-menu">*/
 /*                                         <li class="divider"></li>*/
 /*                                         <li class="dropdown-header">produit</li>*/
-/*                                         <li><a href="#">salade</a></li>*/
+/*                                         <li><a href="">fruits</a></li>*/
+/*                                         <li><a href="">legumes</a></li>*/
 /* */
 /*                                     </ul>*/
 /*                                 </li>*/
@@ -712,7 +704,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*                                 src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeFIshYtHt6EJgz_5zl66k1O10a-gnGaI&sensor=false">*/
 /*                         </script>*/
 /*                         <script>*/
-/*                             var myCenter=new google.maps.LatLng(51.508742,-0.120850);*/
+/*                             var myCenter=new google.maps.LatLng(50.63123710000001,3.063240700000051);*/
 /*                             var marker;*/
 /*                             function initialize()*/
 /*                             {*/
@@ -744,7 +736,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*                         <div id="googleMap" style="height:450px;"></div>*/
 /*                         <div class="container">*/
 /*                             <div class="carousel-caption">*/
-/*                                 <a class="btn btn-lg btn-default" href={{ path('lfd4s_platform_cart')}} role="button" style="font-size:2em">Order Online Now &raquo;</a>*/
+/*                                 <a class="btn btn-lg btn-default" href={{ path('lfd4s_platform_cart')}} role="button" style="font-size:2em">Commande &raquo;</a>*/
 /*                             </div>*/
 /*                         </div>*/
 /*                     </div>*/
@@ -756,7 +748,9 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*             <div class="container">*/
 /*                 <h1>La fraicheur des 4 saisons</h1>*/
 /*                 <p>*/
-/*                    LA FD4S EST ......*/
+/*                    La FD4S est société la société qui vous mets en contact avec les producteurs de votre région!*/
+/*                     Nousvous garantissons livraison rapide, qualité, transparance et la sécurité de vos achats*/
+/* */
 /*                 </p>*/
 /*             </div>*/
 /*         </div>*/
@@ -771,22 +765,19 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*             <!-- Three columns of text below the carousel -->*/
 /*             <div class="row">*/
 /*                 <div class="col-lg-4">*/
-/*                     <img class="img-circle" src="themes/assets/images/nepali-momo.png" alt="Generic placeholder image">*/
-/*                     <h2>Nepalese MOMO</h2>*/
-/*                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>*/
-/*                     <p><a class="btn btn-default" href="#" role="button">&pound; 2.2 Add to cart &raquo;</a></p>*/
+/*                     <img class="img-circle" src="themes/assets/images/Produits.jpg" alt="Generic placeholder image">*/
+/*                     <h2>Produits</h2>*/
+/*                     <p><a class="btn btn-default" href="#" role="button"> En savoir plus </a></p>*/
 /*                 </div><!-- /.col-lg-4 -->*/
 /*                 <div class="col-lg-4">*/
-/*                     <img class="img-circle" src="themes/assets/images/burger.png" alt="Generic placeholder image">*/
-/*                     <h2>Burger</h2>*/
-/*                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>*/
-/*                     <p><a class="btn btn-default" href="#" role="button">&pound;5 Add to cart &raquo;</a></p>*/
+/*                     <img class="img-circle" src="themes/assets/images/image.jpg" alt="Generic placeholder image">*/
+/*                     <h2>livraison</h2>*/
+/*                     <p><a class="btn btn-default" href="#" role="button">En savoir plus </a></p>*/
 /*                 </div><!-- /.col-lg-4 -->*/
 /*                 <div class="col-lg-4">*/
-/*                     <img class="img-circle" src="themes/assets/images/gorkha-special-chicken.png" alt="Lam Tikka">*/
-/*                     <h2>Gurkha Chicken</h2>*/
-/*                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>*/
-/*                     <p><a class="btn btn-default" href="#" role="button">&pound;4 Add to cart &raquo;</a></p>*/
+/*                     <img class="img-circle" src="themes/assets/images/Paypal.jpg" alt="Lam Tikka">*/
+/*                     <h2>Paiement sécurisé </h2>*/
+/*                     <p><a class="btn btn-default" href="#" role="button"> En savoir plus </a></p>*/
 /*                 </div><!-- /.col-lg-4 -->*/
 /*             </div><!-- /.row -->*/
 /*         </div>*/
@@ -798,52 +789,32 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*             <div class="container">*/
 /*                 <div class="row">*/
 /*                     <div class="col-lg-12">*/
-/*                         <h1 class="cntr">We are launching complete online food order system for restaurent and takeaway Only at the rate <br>&pound;999 </h1>*/
+/*                         <h1 class="cntr">Nos producteur vous propose leur produits</h1>*/
 /*                     </div>*/
 /*                 </div>*/
 /*             </div>*/
 /*         </div>*/
 /* */
 /*         <div class="container marketing">*/
-/*             <h2 class="itemsTitle">PRODUCTEUR</h2>*/
+/*             <h2 class="itemsTitle">Producteurs le mieux notés</h2>*/
 /*             <div id="myCarousel1" class="carousel slide" data-ride="carousel">*/
 /*                 <!-- Indicators -->*/
 /*                 <div class="carousel-inner">*/
 /*                     <div class="item active">*/
 /*                         <div class="row">*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/salate.png" alt="Generic placeholder image">*/
-/*                                 <h4>Salates</h4>*/
+/*                                 <img src="themes/assets/images/PROD1.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 1</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/burger.png" alt="Generic placeholder image">*/
-/*                                 <h4>Meal</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 2</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
-/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
-/*                             </div><!-- /.col-lg-4 -->*/
-/*                         </div><!-- /.row -->*/
-/* */
-/*                     </div>*/
-/*                     <div class="item">*/
-/*                         <div class="row">*/
-/*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/salate.png" alt="Generic placeholder image">*/
-/*                                 <h4>Salates</h4>*/
-/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
-/*                             </div><!-- /.col-lg-4 -->*/
-/*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/burger.png" alt="Generic placeholder image">*/
-/*                                 <h4>Meal</h4>*/
-/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
-/*                             </div><!-- /.col-lg-4 -->*/
-/*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
+/*                                 <img src="themes/assets/images/PROD3.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 3</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                         </div><!-- /.row -->*/
@@ -852,18 +823,38 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*                     <div class="item">*/
 /*                         <div class="row">*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">*/
-/*                                 <h4>Salates</h4>*/
+/*                                 <img src="themes/assets/images/producteur.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 4</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/burger.png" alt="Generic placeholder image">*/
-/*                                 <h4>Meal</h4>*/
+/*                                 <img src="themes/assets/images/produits.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 5</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 6</h4>*/
+/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
+/*                             </div><!-- /.col-lg-4 -->*/
+/*                         </div><!-- /.row -->*/
+/* */
+/*                     </div>*/
+/*                     <div class="item">*/
+/*                         <div class="row">*/
+/*                             <div class="col-lg-4">*/
+/*                                 <img  src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 7</h4>*/
+/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
+/*                             </div><!-- /.col-lg-4 -->*/
+/*                             <div class="col-lg-4">*/
+/*                                 <img  src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 8</h4>*/
+/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
+/*                             </div><!-- /.col-lg-4 -->*/
+/*                             <div class="col-lg-4">*/
+/*                                 <img  src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 9</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                         </div><!-- /.row -->*/
@@ -875,45 +866,25 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*         </div>*/
 /* */
 /*         <div class="container marketing">*/
-/*             <h2 class="itemsTitle">Lunch</h2>*/
+/*             <h2 class="itemsTitle">Producteurs à proximité</h2>*/
 /*             <div id="myCarousel2" class="carousel slide" data-ride="carousel">*/
 /*                 <!-- Indicators -->*/
 /*                 <div class="carousel-inner">*/
 /*                     <div class="item active">*/
 /*                         <div class="row">*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/salate.png" alt="Generic placeholder image">*/
-/*                                 <h4>Salates</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>Prod 10</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/chicken.png" alt="Generic placeholder image">*/
-/*                                 <h4>Meal</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>Prod 11</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/drinks_lussy.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
-/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
-/*                             </div><!-- /.col-lg-4 -->*/
-/*                         </div><!-- /.row -->*/
-/* */
-/*                     </div>*/
-/*                     <div class="item">*/
-/*                         <div class="row">*/
-/*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">*/
-/*                                 <h4>Salates</h4>*/
-/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
-/*                             </div><!-- /.col-lg-4 -->*/
-/*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/fish-and-chips.png" alt="Generic placeholder image">*/
-/*                                 <h4>Meal</h4>*/
-/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
-/*                             </div><!-- /.col-lg-4 -->*/
-/*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>Prod 12</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                         </div><!-- /.row -->*/
@@ -922,18 +893,38 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*                     <div class="item">*/
 /*                         <div class="row">*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">*/
-/*                                 <h4>Salates</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 13</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/burger.png" alt="Generic placeholder image">*/
-/*                                 <h4>Meal</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 14</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 15</h4>*/
+/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
+/*                             </div><!-- /.col-lg-4 -->*/
+/*                         </div><!-- /.row -->*/
+/* */
+/*                     </div>*/
+/*                     <div class="item">*/
+/*                         <div class="row">*/
+/*                             <div class="col-lg-4">*/
+/*                                 <img  src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 16</h4>*/
+/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
+/*                             </div><!-- /.col-lg-4 -->*/
+/*                             <div class="col-lg-4">*/
+/*                                 <img  src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 17</h4>*/
+/*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
+/*                             </div><!-- /.col-lg-4 -->*/
+/*                             <div class="col-lg-4">*/
+/*                                 <img  src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 18</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                         </div><!-- /.row -->*/
@@ -945,72 +936,74 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*         </div>*/
 /* */
 /*         <div class="container marketing">*/
-/*             <h2 class="itemsTitle">Dinner</h2>*/
+/*             <h2 class="itemsTitle"> NOS NOUVEAU PRODUCTEURS </h2>*/
 /*             <div id="myCarousel3" class="carousel slide" data-ride="carousel">*/
 /*                 <!-- Indicators -->*/
 /*                 <div class="carousel-inner">*/
 /*                     <div class="item active">*/
 /*                         <div class="row">*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">*/
-/*                                 <h4>Chicken</h4>*/
+/*                                 <img src="themes/assets/images/PROD1.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 19</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/rice.png" alt="Generic placeholder image">*/
-/*                                 <h4>Rice</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 20</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
+/*                                 <img src="themes/assets/images/PROD3.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 21</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
+/* */
 /*                         </div><!-- /.row -->*/
 /* */
 /*                     </div>*/
 /*                     <div class="item">*/
 /*                         <div class="row">*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/courinder.png" alt="Generic placeholder image">*/
-/*                                 <h4>Salates</h4>*/
+/*                                 <img src="themes/assets/images/PROD1.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 22</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/burger.png" alt="Generic placeholder image">*/
-/*                                 <h4>Meal</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 23</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
+/*                                 <img src="themes/assets/images/PROD3.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 24</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
+/* */
 /*                         </div><!-- /.row -->*/
 /* */
 /*                     </div>*/
 /*                     <div class="item">*/
 /*                         <div class="row">*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">*/
-/*                                 <h4>Salates</h4>*/
+/*                                 <img src="themes/assets/images/PROD1.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 25</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">*/
-/*                                 <h4>Chicken</h4>*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 26</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                             <div class="col-lg-4">*/
-/*                                 <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
-/*                                 <h4>Drink</h4>*/
+/*                                 <img src="themes/assets/images/PROD3.jpg" alt="Generic placeholder image">*/
+/*                                 <h4>prod 27</h4>*/
 /*                                 <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>*/
 /*                             </div><!-- /.col-lg-4 -->*/
 /*                         </div><!-- /.row -->*/
 /*                     </div>*/
 /*                 </div>*/
-/*                 <a class="left carousel-control" href="#myCarousel3" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>*/
-/*                 <a class="right carousel-control" href="#myCarousel3" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>*/
+/*                 <a class="left carousel-control" href="" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>*/
+/*                 <a class="right carousel-control" href="" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>*/
 /*             </div><!-- /.carousel -->*/
 /*         </div>*/
 /* */
@@ -1096,7 +1089,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*                                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>*/
 /*                             </div>*/
 /*                             <div class="col-md-5">*/
-/*                                 <img src="themes/assets/images/fish-and-chips.png" alt="Fish and Chips">*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Fish and Chips">*/
 /*                             </div>*/
 /*                         </div>*/
 /*                     </div>*/
@@ -1105,7 +1098,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*                     <div class="item">*/
 /*                         <div class="row featurette">*/
 /*                             <div class="col-md-5">*/
-/*                                 <img src="themes/assets/images/burger.png" alt="Generic placeholder image">*/
+/*                                 <img src="themes/assets/images/PROD2.jpg" alt="Generic placeholder image">*/
 /*                             </div>*/
 /*                             <div class="col-md-7">*/
 /*                                 <h2 class="featurette-heading">Oh yeah, very nice Burger. <span class="text-muted">Delicious.</span></h2>*/
@@ -1122,7 +1115,7 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*                                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>*/
 /*                             </div>*/
 /*                             <div class="col-md-5">*/
-/*                                 <img class="img-circle" src="themes/assets/images/drinks.png" alt="Generic placeholder image">*/
+/*                                 <img class="img-circle" src="/themes/assets/images/PROD1.jpg" alt="Generic placeholder image">*/
 /*                             </div>*/
 /*                         </div>*/
 /*                     </div>*/
@@ -1132,13 +1125,13 @@ class __TwigTemplate_2f9f4d327c85360097a247b377b548ae6a7f64dafabcfd4a6589fbe0476
 /*         <!-- /END THE FEATURETTES -->*/
 /*         <br />*/
 /* */
-/*  <br />*/
-/*         footer<br  />*/
+/*  <br /><br  />*/
 /*         <!-- FOOTER -->*/
 /*         <footer>*/
 /*             <div class="container">*/
-/*                 <p class="pull-right"><a href="#">Back to top</a></p>*/
-/*                 <p>&copy; 2018 LFD4S, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>*/
+/*                 <p class="pull-right"><a href="">Back to top</a></p>*/
+/*                 <p>&copy; 2018 LFD4S, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Mentions Légales</a></p>*/
+/*                 <p>Pour votre santé, pratiquez une activité physique régulière. <a href=www.mangerbouger.fr>www.mangerbouger.fr</a></p>*/
 /*             </div>*/
 /*         </footer>*/
 /*  <br  />*/

@@ -27,12 +27,17 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $context = $this->context;
         $request = $this->request;
 
-        // lfd4s_platform_home
+        // lfd4s_platform_first
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'lfd4s_platform_home');
+                return $this->redirect($pathinfo.'/', 'lfd4s_platform_first');
             }
 
+            return array (  '_controller' => 'LFD4S\\PlatformBundle\\Controller\\AdvertController::firstAction',  '_route' => 'lfd4s_platform_first',);
+        }
+
+        // lfd4s_platform_home
+        if ($pathinfo === '/first') {
             return array (  '_controller' => 'LFD4S\\PlatformBundle\\Controller\\AdvertController::indexAction',  '_route' => 'lfd4s_platform_home',);
         }
 
@@ -69,11 +74,6 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         // lfd4s_platform_view
         if ($pathinfo === '/view') {
             return array (  '_controller' => 'LFD4S\\PlatformBundle\\Controller\\AdvertController::viewAction',  '_route' => 'lfd4s_platform_view',);
-        }
-
-        // lfd4s_platform_first
-        if ($pathinfo === '/first') {
-            return array (  '_controller' => 'LFD4S\\PlatformBundle\\Controller\\AdvertController::firstAction',  '_route' => 'lfd4s_platform_first',);
         }
 
         // lfd4s_platform_second

@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Bienvenue sur ma première page !</title>
-    </head>
+{% extends "::layout.html.twig" %}
+
+{% block body %}
     <body>
     <h1>Hello {{ nom }} !</h1>
 
@@ -13,4 +11,4 @@
             afficher ce hello world !
         </p>
     </body>
-</html>
+{% endblock %}

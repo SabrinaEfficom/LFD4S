@@ -21,7 +21,7 @@ class AdvertController extends Controller
     }
     public function logAction()
     {
-        return $this->render('LFD4SPlatformBundle:Advert:log.html.twig');
+        return $this->render('LFD4SPlatformBundle:Advert:login.html.twig');
     }
     public function accountAction()
     {
