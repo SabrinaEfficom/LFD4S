@@ -10,61 +10,55 @@ class __TwigTemplate_412f2a81801410e67dde95ae6d06a2a79eee93410e7cd30d08bd06dddbd
         $this->parent = false;
 
         $this->blocks = array(
-            'title' => array($this, 'block_title'),
-            'body' => array($this, 'block_body'),
+            'head' => array($this, 'block_head'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dc54f5ad37b7956715239ff8b863eb725c6a40b0fd31c539c2220ef57867947a = $this->env->getExtension("native_profiler");
-        $__internal_dc54f5ad37b7956715239ff8b863eb725c6a40b0fd31c539c2220ef57867947a->enter($__internal_dc54f5ad37b7956715239ff8b863eb725c6a40b0fd31c539c2220ef57867947a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout.html.twig"));
+        $__internal_0e5bda2c1e10d50e1ba5637662929606aacfbe69470430baa523823e1b25d457 = $this->env->getExtension("native_profiler");
+        $__internal_0e5bda2c1e10d50e1ba5637662929606aacfbe69470430baa523823e1b25d457->enter($__internal_0e5bda2c1e10d50e1ba5637662929606aacfbe69470430baa523823e1b25d457_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout.html.twig"));
 
         // line 1
-        echo "<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset=\"utf-8\">
-    <title>";
-        // line 5
-        $this->displayBlock('title', $context, $blocks);
-        echo "</title>
-</head>
-<body>
-
-";
-        // line 9
-        $this->displayBlock('body', $context, $blocks);
-        // line 11
         echo "
-</body>
-</html>
+
+";
+        // line 3
+        $this->displayBlock('head', $context, $blocks);
+        
+        $__internal_0e5bda2c1e10d50e1ba5637662929606aacfbe69470430baa523823e1b25d457->leave($__internal_0e5bda2c1e10d50e1ba5637662929606aacfbe69470430baa523823e1b25d457_prof);
+
+    }
+
+    public function block_head($context, array $blocks = array())
+    {
+        $__internal_194a83a8458fd96d4732e83ef4607dc00241fbabb9a79f5a2a648f4c7a3c1320 = $this->env->getExtension("native_profiler");
+        $__internal_194a83a8458fd96d4732e83ef4607dc00241fbabb9a79f5a2a648f4c7a3c1320->enter($__internal_194a83a8458fd96d4732e83ef4607dc00241fbabb9a79f5a2a648f4c7a3c1320_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
+
+        // line 4
+        echo "        <meta charset=\"UTF-8\" />
+        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+        <meta name=\"description\" content=\"site EII\">
+        <meta name=\"author\" content=\"Arif Sabrina\">
+        <link rel=\"shortcut icon\" href=\"themes/assets/ico/LFD4Sicon.ico\">
+
+
+        <!-- Bootstrap core CSS -->
+        <link href=\"themes/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
+        <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
+        <![endif]-->
+
+        <!-- Custom styles for this template -->
+        <link href=\"themes/assets/css/carousel.css\" rel=\"stylesheet\">
 ";
         
-        $__internal_dc54f5ad37b7956715239ff8b863eb725c6a40b0fd31c539c2220ef57867947a->leave($__internal_dc54f5ad37b7956715239ff8b863eb725c6a40b0fd31c539c2220ef57867947a_prof);
-
-    }
-
-    // line 5
-    public function block_title($context, array $blocks = array())
-    {
-        $__internal_6d5c909a14c4578ba0eea44b024b0132b6fa169fa7ad40a31cff57c05207fabf = $this->env->getExtension("native_profiler");
-        $__internal_6d5c909a14c4578ba0eea44b024b0132b6fa169fa7ad40a31cff57c05207fabf->enter($__internal_6d5c909a14c4578ba0eea44b024b0132b6fa169fa7ad40a31cff57c05207fabf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        echo "LF4DS Plateforme";
-        
-        $__internal_6d5c909a14c4578ba0eea44b024b0132b6fa169fa7ad40a31cff57c05207fabf->leave($__internal_6d5c909a14c4578ba0eea44b024b0132b6fa169fa7ad40a31cff57c05207fabf_prof);
-
-    }
-
-    // line 9
-    public function block_body($context, array $blocks = array())
-    {
-        $__internal_e7118dccc1d5ec3fc3d9013326b9e7bb9edd93c69e4caa98ec077621831554b5 = $this->env->getExtension("native_profiler");
-        $__internal_e7118dccc1d5ec3fc3d9013326b9e7bb9edd93c69e4caa98ec077621831554b5->enter($__internal_e7118dccc1d5ec3fc3d9013326b9e7bb9edd93c69e4caa98ec077621831554b5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_e7118dccc1d5ec3fc3d9013326b9e7bb9edd93c69e4caa98ec077621831554b5->leave($__internal_e7118dccc1d5ec3fc3d9013326b9e7bb9edd93c69e4caa98ec077621831554b5_prof);
+        $__internal_194a83a8458fd96d4732e83ef4607dc00241fbabb9a79f5a2a648f4c7a3c1320->leave($__internal_194a83a8458fd96d4732e83ef4607dc00241fbabb9a79f5a2a648f4c7a3c1320_prof);
 
     }
 
@@ -75,20 +69,31 @@ class __TwigTemplate_412f2a81801410e67dde95ae6d06a2a79eee93410e7cd30d08bd06dddbd
 
     public function getDebugInfo()
     {
-        return array (  61 => 9,  49 => 5,  39 => 11,  37 => 9,  30 => 5,  24 => 1,);
+        return array (  39 => 4,  27 => 3,  23 => 1,);
     }
 }
-/* <!DOCTYPE HTML>*/
-/* <html>*/
-/* <head>*/
-/*     <meta charset="utf-8">*/
-/*     <title>{% block title %}LF4DS Plateforme{% endblock %}</title>*/
-/* </head>*/
-/* <body>*/
 /* */
-/* {% block body %}*/
-/* {% endblock %}*/
 /* */
-/* </body>*/
-/* </html>*/
+/* {% block head %}*/
+/*         <meta charset="UTF-8" />*/
+/*         <meta http-equiv="X-UA-Compatible" content="IE=edge">*/
+/*         <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+/*         <meta name="description" content="site EII">*/
+/*         <meta name="author" content="Arif Sabrina">*/
+/*         <link rel="shortcut icon" href="themes/assets/ico/LFD4Sicon.ico">*/
+/* */
+/* */
+/*         <!-- Bootstrap core CSS -->*/
+/*         <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">*/
+/* */
+/* */
+/*         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->*/
+/*         <!--[if lt IE 9]>*/
+/*         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>*/
+/*         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>*/
+/*         <![endif]-->*/
+/* */
+/*         <!-- Custom styles for this template -->*/
+/*         <link href="themes/assets/css/carousel.css" rel="stylesheet">*/
+/* {% endblock head %}*/
 /* */

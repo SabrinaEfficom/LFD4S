@@ -16,8 +16,8 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_42a7f86f49645eeecdf3c014861b220dbfaed3f01fa4338d71fd44e3245c4b0a = $this->env->getExtension("native_profiler");
-        $__internal_42a7f86f49645eeecdf3c014861b220dbfaed3f01fa4338d71fd44e3245c4b0a->enter($__internal_42a7f86f49645eeecdf3c014861b220dbfaed3f01fa4338d71fd44e3245c4b0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_9f08d638725b3adc8d86803a4b80965de00d6addd238b2d2c176f6c303367acd = $this->env->getExtension("native_profiler");
+        $__internal_9f08d638725b3adc8d86803a4b80965de00d6addd238b2d2c176f6c303367acd->enter($__internal_9f08d638725b3adc8d86803a4b80965de00d6addd238b2d2c176f6c303367acd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -34,8 +34,6 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
         <!-- Bootstrap core CSS -->
         <link href=\"themes/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
 
-        <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script src=\"themes/assets/js/ie8-responsive-file-warning.js\"></script><![endif]-->
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -63,7 +61,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
                                 <span class=\"icon-bar\"></span>
                             </button>
                             <a class=\"navbar-brand\" href=";
-        // line 43
+        // line 41
         echo $this->env->getExtension('routing')->getPath("lfd4s_platform_home");
         echo ">Accueil LFD4St</a>
                         </div>
@@ -77,7 +75,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
                                 <li class=\"dropdown\">
                                     <a href=\"\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Producteur <b class=\"caret\"></b></a>
                                     <ul class=\"dropdown-menu\">
-                                        <li><a href=\"\">Producteurs</a></li>
+                                        <li><a href=\"\">Producteur</a></li>
                                         <li><a href=\"\">info Producteur</a></li>
 
                                     </ul>
@@ -158,7 +156,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
                         <div class=\"container\">
                             <div class=\"carousel-caption\">
                                 <a class=\"btn btn-lg btn-default\" href=";
-        // line 135
+        // line 133
         echo $this->env->getExtension('routing')->getPath("lfd4s_platform_cart");
         echo " role=\"button\" style=\"font-size:2em\">Commande &raquo;</a>
                             </div>
@@ -173,7 +171,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
                 <h1>La fraicheur des 4 saisons</h1>
                 <p>
                    La FD4S est société la société qui vous mets en contact avec les producteurs de votre région!
-                    Nousvous garantissons livraison rapide, qualité, transparance et la sécurité de vos achats
+                    Nous vous garantissons livraison rapide, qualité, transparance et la sécurité de vos achats
 
                 </p>
             </div>
@@ -431,68 +429,28 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
             </div><!-- /.carousel -->
         </div>
 
-
-        <div class=\"highlightSection\">
-            <div class=\"container\">
-                <div class=\"row\">
-                    <div class=\"col-lg-4\">
-                        <div class=\"media\">
-                            <a href=\"menu/\"><img src=\"themes/assets/images/nepali-momo.png\" alt=\"nepali-momo\"> </a>
-                            <h3 class=\"media-heading text-primary-theme\">NEPALESE LAMB MOMO</h3>
-                            <p>Steamed dumplings filled with slightly spiced minced meat served with special sauce.</p>
-                        </div>
-                    </div>
-                    <div class=\"col-lg-4\">
-                        <div class=\"media\"><a href=\"menu/\"><img src=\"themes/assets/images/gorkha-special-chicken.png\" alt=\"GURKHA SPECIAL CHICKEN\"> </a>
-                            <h3 class=\"media-heading text-danger-theme\">GURKHA SPECIAL CHICKEN</h3>
-                            <p>Boneless chicken marinated in mustard, smoked chilli, herbs and spices slowly cooked in tandoor. </p>
-
-                        </div>
-                    </div>
-                    <div class=\"col-lg-4\">
-                        <div class=\"media\">
-                            <a href=\"menu/\"><img src=\"themes/assets/images/lam-tikka.png\" alt=\"Lam Tikka\"> </a>
-                            <h3 class=\"media-heading\">LAMB TIKKA SPECIAL</h3>
-                            <p>Tender pieces of lamb mixed with our own spices and gently cooked in clay oven. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
         <div class=\"introSection\">
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-lg-5\">
-                        <h3>Welcome to restaurent</h3>
+                        <h3>Welcome to LFD4S</h3>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
+                            le bio
                     </div>
 
                     <div class=\"col-lg-4\">
-                        <h3>Welcome to restaurent</h3>
+                        <h3>Welcome to LFD4S</h3>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
+                            Le commerce équitable <br><br>
 
                         </p>
 
                     </div>
 
                     <div class=\"col-lg-3\">
-                        <h3>Welcome to restaurent</h3>
+                        <h3>Welcome to LFD4S</h3>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
+                            produit sans OGM ni pesticide
                         </p>
 
                     </div>
@@ -560,30 +518,30 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
         </footer>
  <br  />
         ";
-        // line 534
+        // line 492
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 539
+        // line 497
         echo "    </body>
 </html>
 ";
         
-        $__internal_42a7f86f49645eeecdf3c014861b220dbfaed3f01fa4338d71fd44e3245c4b0a->leave($__internal_42a7f86f49645eeecdf3c014861b220dbfaed3f01fa4338d71fd44e3245c4b0a_prof);
+        $__internal_9f08d638725b3adc8d86803a4b80965de00d6addd238b2d2c176f6c303367acd->leave($__internal_9f08d638725b3adc8d86803a4b80965de00d6addd238b2d2c176f6c303367acd_prof);
 
     }
 
-    // line 534
+    // line 492
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_849cd300240dcc619590d86730b87c07d19adfd6057f6fcd7a84f72b7077e7b4 = $this->env->getExtension("native_profiler");
-        $__internal_849cd300240dcc619590d86730b87c07d19adfd6057f6fcd7a84f72b7077e7b4->enter($__internal_849cd300240dcc619590d86730b87c07d19adfd6057f6fcd7a84f72b7077e7b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_9c68765b8010f61bdd9b3d6f40db69aa6573ef82481793ecf50943c9f68b7656 = $this->env->getExtension("native_profiler");
+        $__internal_9c68765b8010f61bdd9b3d6f40db69aa6573ef82481793ecf50943c9f68b7656->enter($__internal_9c68765b8010f61bdd9b3d6f40db69aa6573ef82481793ecf50943c9f68b7656_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 535
+        // line 493
         echo "        <script src=\"https://code.jquery.com/jquery-1.12.4.min.js\"></script>
         <script src=\"/web/js/bootstrap.min.js\"></script>
         <script src=\"/web/js/holder.js \"></script>
         ";
         
-        $__internal_849cd300240dcc619590d86730b87c07d19adfd6057f6fcd7a84f72b7077e7b4->leave($__internal_849cd300240dcc619590d86730b87c07d19adfd6057f6fcd7a84f72b7077e7b4_prof);
+        $__internal_9c68765b8010f61bdd9b3d6f40db69aa6573ef82481793ecf50943c9f68b7656->leave($__internal_9c68765b8010f61bdd9b3d6f40db69aa6573ef82481793ecf50943c9f68b7656_prof);
 
     }
 
@@ -599,7 +557,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 
     public function getDebugInfo()
     {
-        return array (  581 => 535,  575 => 534,  566 => 539,  564 => 534,  162 => 135,  67 => 43,  23 => 1,);
+        return array (  539 => 493,  533 => 492,  524 => 497,  522 => 492,  160 => 133,  65 => 41,  23 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -616,8 +574,6 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /*         <!-- Bootstrap core CSS -->*/
 /*         <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">*/
 /* */
-/*         <!-- Just for debugging purposes. Don't actually copy this line! -->*/
-/*         <!--[if lt IE 9]><script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->*/
 /* */
 /*         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->*/
 /*         <!--[if lt IE 9]>*/
@@ -656,7 +612,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /*                                 <li class="dropdown">*/
 /*                                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Producteur <b class="caret"></b></a>*/
 /*                                     <ul class="dropdown-menu">*/
-/*                                         <li><a href="">Producteurs</a></li>*/
+/*                                         <li><a href="">Producteur</a></li>*/
 /*                                         <li><a href="">info Producteur</a></li>*/
 /* */
 /*                                     </ul>*/
@@ -749,7 +705,7 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /*                 <h1>La fraicheur des 4 saisons</h1>*/
 /*                 <p>*/
 /*                    La FD4S est société la société qui vous mets en contact avec les producteurs de votre région!*/
-/*                     Nousvous garantissons livraison rapide, qualité, transparance et la sécurité de vos achats*/
+/*                     Nous vous garantissons livraison rapide, qualité, transparance et la sécurité de vos achats*/
 /* */
 /*                 </p>*/
 /*             </div>*/
@@ -1007,68 +963,28 @@ class __TwigTemplate_c6467985f06e6bdfba2ed9a2fe18b65137d86dfc19149d024e74688cbb8
 /*             </div><!-- /.carousel -->*/
 /*         </div>*/
 /* */
-/* */
-/*         <div class="highlightSection">*/
-/*             <div class="container">*/
-/*                 <div class="row">*/
-/*                     <div class="col-lg-4">*/
-/*                         <div class="media">*/
-/*                             <a href="menu/"><img src="themes/assets/images/nepali-momo.png" alt="nepali-momo"> </a>*/
-/*                             <h3 class="media-heading text-primary-theme">NEPALESE LAMB MOMO</h3>*/
-/*                             <p>Steamed dumplings filled with slightly spiced minced meat served with special sauce.</p>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-lg-4">*/
-/*                         <div class="media"><a href="menu/"><img src="themes/assets/images/gorkha-special-chicken.png" alt="GURKHA SPECIAL CHICKEN"> </a>*/
-/*                             <h3 class="media-heading text-danger-theme">GURKHA SPECIAL CHICKEN</h3>*/
-/*                             <p>Boneless chicken marinated in mustard, smoked chilli, herbs and spices slowly cooked in tandoor. </p>*/
-/* */
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-lg-4">*/
-/*                         <div class="media">*/
-/*                             <a href="menu/"><img src="themes/assets/images/lam-tikka.png" alt="Lam Tikka"> </a>*/
-/*                             <h3 class="media-heading">LAMB TIKKA SPECIAL</h3>*/
-/*                             <p>Tender pieces of lamb mixed with our own spices and gently cooked in clay oven. </p>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </div>*/
-/*             </div>*/
-/*         </div>*/
-/* */
-/* */
-/* */
 /*         <div class="introSection">*/
 /*             <div class="container">*/
 /*                 <div class="row">*/
 /*                     <div class="col-lg-5">*/
-/*                         <h3>Welcome to restaurent</h3>*/
+/*                         <h3>Welcome to LFD4S</h3>*/
 /*                         <p>*/
-/*                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy*/
-/*                             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.*/
-/*                             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>*/
-/*                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,*/
-/*                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.*/
-/*                         </p>*/
+/*                             le bio*/
 /*                     </div>*/
 /* */
 /*                     <div class="col-lg-4">*/
-/*                         <h3>Welcome to restaurent</h3>*/
+/*                         <h3>Welcome to LFD4S</h3>*/
 /*                         <p>*/
-/*                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy*/
-/*                             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.*/
-/*                             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>*/
+/*                             Le commerce équitable <br><br>*/
 /* */
 /*                         </p>*/
 /* */
 /*                     </div>*/
 /* */
 /*                     <div class="col-lg-3">*/
-/*                         <h3>Welcome to restaurent</h3>*/
+/*                         <h3>Welcome to LFD4S</h3>*/
 /*                         <p>*/
-/*                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy*/
-/*                             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.*/
-/* */
+/*                             produit sans OGM ni pesticide*/
 /*                         </p>*/
 /* */
 /*                     </div>*/

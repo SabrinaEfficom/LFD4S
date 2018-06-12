@@ -10,9 +10,7 @@ class __TwigTemplate_0572d04c3a79ba74a2c2563bf8a5d25c49abf43b93c07dd3e764e42dbd5
         // line 1
         $this->parent = $this->loadTemplate("::layout.html.twig", "@LFD4SPlatform/layout.html.twig", 1);
         $this->blocks = array(
-            'title' => array($this, 'block_title'),
-            'body' => array($this, 'block_body'),
-            'LFD4Splatform_body' => array($this, 'block_LFD4Splatform_body'),
+            'head' => array($this, 'block_head'),
         );
     }
 
@@ -23,67 +21,45 @@ class __TwigTemplate_0572d04c3a79ba74a2c2563bf8a5d25c49abf43b93c07dd3e764e42dbd5
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_66d452dd51687545c8d0289d6349463f51b4ff625ff73753199f4e5fac8d6b36 = $this->env->getExtension("native_profiler");
-        $__internal_66d452dd51687545c8d0289d6349463f51b4ff625ff73753199f4e5fac8d6b36->enter($__internal_66d452dd51687545c8d0289d6349463f51b4ff625ff73753199f4e5fac8d6b36_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@LFD4SPlatform/layout.html.twig"));
+        $__internal_26b3e9780021b17ec568ae08806dafe23a805dc49874f4d103da82ccb4660d96 = $this->env->getExtension("native_profiler");
+        $__internal_26b3e9780021b17ec568ae08806dafe23a805dc49874f4d103da82ccb4660d96->enter($__internal_26b3e9780021b17ec568ae08806dafe23a805dc49874f4d103da82ccb4660d96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@LFD4SPlatform/layout.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_66d452dd51687545c8d0289d6349463f51b4ff625ff73753199f4e5fac8d6b36->leave($__internal_66d452dd51687545c8d0289d6349463f51b4ff625ff73753199f4e5fac8d6b36_prof);
+        $__internal_26b3e9780021b17ec568ae08806dafe23a805dc49874f4d103da82ccb4660d96->leave($__internal_26b3e9780021b17ec568ae08806dafe23a805dc49874f4d103da82ccb4660d96_prof);
 
     }
 
     // line 3
-    public function block_title($context, array $blocks = array())
+    public function block_head($context, array $blocks = array())
     {
-        $__internal_ba627c7f3d687c30e0788db02592975340b7405dc58747bdf5b028fac316c9e4 = $this->env->getExtension("native_profiler");
-        $__internal_ba627c7f3d687c30e0788db02592975340b7405dc58747bdf5b028fac316c9e4->enter($__internal_ba627c7f3d687c30e0788db02592975340b7405dc58747bdf5b028fac316c9e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_00b02b2cd65fa3417440c3947d8e7a6d67ecf82130a54337edbf4bbd79f0f074 = $this->env->getExtension("native_profiler");
+        $__internal_00b02b2cd65fa3417440c3947d8e7a6d67ecf82130a54337edbf4bbd79f0f074->enter($__internal_00b02b2cd65fa3417440c3947d8e7a6d67ecf82130a54337edbf4bbd79f0f074_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
 
         // line 4
-        echo "    Annonces - ";
-        $this->displayParentBlock("title", $context, $blocks);
-        echo "
+        echo "    <meta charset=\"UTF-8\" />
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta name=\"description\" content=\"site EII\">
+    <meta name=\"author\" content=\"Arif Sabrina\">
+    <link rel=\"shortcut icon\" href=\"themes/assets/ico/LFD4Sicon.ico\">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href=\"themes/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
+    <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href=\"themes/assets/css/carousel.css\" rel=\"stylesheet\">
 ";
         
-        $__internal_ba627c7f3d687c30e0788db02592975340b7405dc58747bdf5b028fac316c9e4->leave($__internal_ba627c7f3d687c30e0788db02592975340b7405dc58747bdf5b028fac316c9e4_prof);
-
-    }
-
-    // line 7
-    public function block_body($context, array $blocks = array())
-    {
-        $__internal_61af181a256458985b8284ff0d356aeeedfc541cdf0dfa1ec6a27ef08da17cb1 = $this->env->getExtension("native_profiler");
-        $__internal_61af181a256458985b8284ff0d356aeeedfc541cdf0dfa1ec6a27ef08da17cb1->enter($__internal_61af181a256458985b8284ff0d356aeeedfc541cdf0dfa1ec6a27ef08da17cb1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        // line 8
-        echo "
-    ";
-        // line 10
-        echo "    <h1>Annonces</h1>
-
-    <hr>
-
-    ";
-        // line 15
-        echo "    ";
-        $this->displayBlock('LFD4Splatform_body', $context, $blocks);
-        // line 17
-        echo "
-";
-        
-        $__internal_61af181a256458985b8284ff0d356aeeedfc541cdf0dfa1ec6a27ef08da17cb1->leave($__internal_61af181a256458985b8284ff0d356aeeedfc541cdf0dfa1ec6a27ef08da17cb1_prof);
-
-    }
-
-    // line 15
-    public function block_LFD4Splatform_body($context, array $blocks = array())
-    {
-        $__internal_5eaacfebcecc7d991a080b3ce485e3480073fade973116cb07839787f14ac7e6 = $this->env->getExtension("native_profiler");
-        $__internal_5eaacfebcecc7d991a080b3ce485e3480073fade973116cb07839787f14ac7e6->enter($__internal_5eaacfebcecc7d991a080b3ce485e3480073fade973116cb07839787f14ac7e6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "LFD4Splatform_body"));
-
-        // line 16
-        echo "    ";
-        
-        $__internal_5eaacfebcecc7d991a080b3ce485e3480073fade973116cb07839787f14ac7e6->leave($__internal_5eaacfebcecc7d991a080b3ce485e3480073fade973116cb07839787f14ac7e6_prof);
+        $__internal_00b02b2cd65fa3417440c3947d8e7a6d67ecf82130a54337edbf4bbd79f0f074->leave($__internal_00b02b2cd65fa3417440c3947d8e7a6d67ecf82130a54337edbf4bbd79f0f074_prof);
 
     }
 
@@ -99,24 +75,31 @@ class __TwigTemplate_0572d04c3a79ba74a2c2563bf8a5d25c49abf43b93c07dd3e764e42dbd5
 
     public function getDebugInfo()
     {
-        return array (  84 => 16,  78 => 15,  70 => 17,  67 => 15,  61 => 10,  58 => 8,  52 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  40 => 4,  34 => 3,  11 => 1,);
     }
 }
 /* {% extends "::layout.html.twig" %}*/
 /* */
-/* {% block title %}*/
-/*     Annonces - {{ parent() }}*/
-/* {% endblock %}*/
+/* {% block head %}*/
+/*     <meta charset="UTF-8" />*/
+/*     <meta http-equiv="X-UA-Compatible" content="IE=edge">*/
+/*     <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+/*     <meta name="description" content="site EII">*/
+/*     <meta name="author" content="Arif Sabrina">*/
+/*     <link rel="shortcut icon" href="themes/assets/ico/LFD4Sicon.ico">*/
 /* */
-/* {% block body %}*/
 /* */
-/*     {# On définit un sous-titre commun à toutes les pages du bundle, par exemple #}*/
-/*     <h1>Annonces</h1>*/
+/*     <!-- Bootstrap core CSS -->*/
+/*     <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">*/
 /* */
-/*     <hr>*/
 /* */
-/*     {# On définit un nouveau bloc, que les vues du bundle pourront remplir #}*/
-/*     {% block LFD4Splatform_body %}*/
-/*     {% endblock %}*/
+/*     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->*/
+/*     <!--[if lt IE 9]>*/
+/*     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>*/
+/*     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>*/
+/*     <![endif]-->*/
 /* */
-/* {% endblock %}*/
+/*     <!-- Custom styles for this template -->*/
+/*     <link href="themes/assets/css/carousel.css" rel="stylesheet">*/
+/* {% endblock head %}*/
+/* */
